@@ -117,4 +117,4 @@ def predict(input_dict):
     else:
         prediction = model_rest.predict(input_df)
 
-    return int(prediction[0])
+    return max(0, int(prediction[0]))
