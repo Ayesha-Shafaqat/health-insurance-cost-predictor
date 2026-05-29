@@ -116,5 +116,4 @@ def predict(input_dict):
         prediction = model_young.predict(input_df)
     else:
         prediction = model_rest.predict(input_df)
-
     return max(0, int(prediction[0]))
